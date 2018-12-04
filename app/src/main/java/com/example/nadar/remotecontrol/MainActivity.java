@@ -48,6 +48,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
                 float x = event.getX();
                 float y = event.getY();
 
+                SendInstruction s = new SendInstruction();
+                s.execute(new String[]{"move " + (int) x + " " + (int) y + "\n"});
                 
                 return false;
             }
