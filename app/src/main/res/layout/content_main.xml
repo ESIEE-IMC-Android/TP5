@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<TableRow android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/tableRow1">
+    <EditText android:id="@+id/ip"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="IP Address"
+        android:numeric="decimal"
+        android:inputType="phone">
+        <requestFocus/>
+    </EditText>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText android:text="Port"
+        android:id="@+id/port"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+    <Button android:id="@+id/set"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="set IP and Port"
+        />
+</TableRow>
+<TableRow android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/tableCmd"
+    android:layout_gravity="center">
+    <Button android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left"
+        android:text="left"
+        android:contentDescription="previous"/>
+    <Button android:text="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/right"
+        android:contentDescription="next"/>
+    <Button android:text="up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/up"
+        android:contentDescription="up"
+        />
+    <Button android:text="down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/down"
+        android:contentDescription="down"
+        />
+    <Button android:text="beep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/beep"
+        android:contentDescription="beep"
+        />
+    <Button android:id="@+id/click"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="click"
+        android:contentDescription="click"
+        />
+</TableRow>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <View android:id="@+id/touchPad"
+            android:layout_width="wrap_content"
+            android:background="#FFFFFF"
+            android:contentDescription="move"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+</LinearLayout>
