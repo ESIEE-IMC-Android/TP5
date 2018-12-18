@@ -50,7 +50,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
                 SendInstruction s = new SendInstruction();
                 s.execute(new String[]{"move " + (int) x + " " + (int) y + "\n"});
-                
+
                 return false;
             }
         });
